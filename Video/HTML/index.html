@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <title>视频播放器</title>
+
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+SC:wght@300;400;500;700&display=swap" rel="stylesheet">
+
+    <!-- DPlayer CSS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/dplayer@1.27.1/dist/DPlayer.min.css" />
+
+    <!-- LightGallery CSS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/lightgallery@2.7.1/css/lightgallery-bundle.min.css" />
+
+    <!-- 自定义样式 - 已更换为新地址 -->
+    <link rel="stylesheet" href="https://d.abvod.cn/t/65496936848822272/Videos/HTML/style.css">
+</head>
+<body>
+    <div class="container">
+        <div class="video-section">
+            <div id="dplayer"></div>
+        </div>
+        
+        <div class="info-section">
+            <h1 class="video-title">示例标题</h1>
+            <div class="video-author">
+                <div class="author-avatar">A</div>
+                <span>示例作者</span>
+            </div>
+            
+            <div class="image-gallery" id="imageGallery">
+                <div id="lightgallery" class="image-grid"></div>
+            </div>
+            
+            <div class="video-description">
+                <div class="description-content">
+                    <!-- 内容将由 JS 动态填充 -->
+                </div>
+                
+                <div style="margin-top: 20px; padding: 15px; background: #222; border-radius: 8px; font-size: 13px; color: #888;">
+                    <p>© 2023 播放器平台. 保留所有权利。</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- DPlayer JS -->
+    <script src="https://cdn.jsdelivr.net/npm/dplayer@1.27.1/dist/DPlayer.min.js"></script>
+    
+    <!-- LightGallery JS -->
+    <script src="https://cdn.jsdelivr.net/npm/lightgallery@2.7.1/lightgallery.umd.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/lightgallery@2.7.1/plugins/zoom/lg-zoom.umd.min.js"></script>
+
+    <!-- 动态参数 JS - 已更换为新地址 -->
+    <script src="https://d.abvod.cn/t/65496936848822272/Videos/HTML/script.js"></script>
+</body>
+</html>
